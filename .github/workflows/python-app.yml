@@ -39,11 +39,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Create Executable
-      - uses: sayyid5416/pyinstaller@v1
+        uses: sayyid5416/pyinstaller@v1
         with:
          python-version: "3.10"
          spec: 'main.py'
          upload_exe_with_name: 'shrimp_package'
          options: --onefile
-      
-  
